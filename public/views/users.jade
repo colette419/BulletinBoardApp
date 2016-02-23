@@ -1,0 +1,11 @@
+doctype html
+head
+    title Bulletin Board Users
+    link(href='/Stylesheet.css', rel='stylesheet')
+body
+    a(href='/') Submit Another Post
+    h1 Here are all posted messages:
+    h2 Messages:
+      each post in Messages
+          li#titleOfPost TITLE: #{post.posttitle} 
+          li#body MESSAGE: #{post.postbody}

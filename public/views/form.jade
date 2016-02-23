@@ -1,0 +1,14 @@
+doctype html
+head
+    title Bulletin Board
+    link(href='/Stylesheet.css', rel='stylesheet')
+body#formBody
+  a(href='/posts') Check out Posts
+  h1 The Greatest Bulletin Board the World Has Ever Seen
+    form(action="/" method="post")
+      p Title
+      input#title(type="text" name="blogTitle")
+      p Body
+      textarea#bodyForm(type="text" name="blogBody")
+      p
+      input#submitButton(type="submit")
